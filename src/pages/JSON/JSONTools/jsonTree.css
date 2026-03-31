@@ -1,0 +1,20 @@
+.json-line {
+  padding: 2px 4px;
+  margin-left: -4px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.json-line:hover {
+  background: #f5f5f5;
+}
+
+.json-copy {
+  margin-left: 8px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.json-copy:hover {
+  opacity: 1;
+}
