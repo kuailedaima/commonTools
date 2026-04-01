@@ -5,7 +5,7 @@ import JsonTools from "@/pages/JSON/JSONTools/JsonToolPage";
 
 const router = createBrowserRouter([
   {
-    path: '/Home',
+    path: '/',
     element: <Home />
   },
   {
