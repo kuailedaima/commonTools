@@ -21,8 +21,8 @@ jobs:
 
       - name: Build for GitHub Pages
         env:
-          VITE_BASE_URL: /${{ github.event.repository.name }}/
-        run: npm run build:gh
+          GITHUB_ACTIONS: 'true'  # 触发使用仓库名前缀
+        run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
