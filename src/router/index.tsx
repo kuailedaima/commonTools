@@ -3,6 +3,8 @@ import Home from '@/pages/Home/index.tsx'
 import Base64ToPdf from '@/pages/Base64/Base64ToPdf'
 import JsonTools from "@/pages/JSON/JSONTools/JsonToolPage";
 
+const isGitHubPages = window.location.hostname.includes('github.io');
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -16,6 +18,8 @@ const router = createBrowserRouter([
     path: '/JsonTools',
     element: <JsonTools />
   },
-])
+], {
+  basename: isGitHubPages ? '/commonTools' : '',
+})
 
 export default router
